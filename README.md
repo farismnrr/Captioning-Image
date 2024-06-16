@@ -15,7 +15,7 @@ myenv\Scripts\activate
 ```
 - Create Virtual Environment (Linux)
 ```sh
-pip install virtualenv
+sudo apt install python3-venv
 python -m venv myenv
 source myenv/bin/activate
 ```
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 - Training the model and run the app
 ```
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 80
 ```
 
 ### Install by Docker
